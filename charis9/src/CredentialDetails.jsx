@@ -24,10 +24,7 @@ function CredentialDetails() {
           </div>
 
           <p className="credential-description">
-            The aim of this course is to provide delegates with the knowledge
-            and skills required to perform first, second and third-party audits
-            of quality management systems against ISO 14001, in accordance
-            with ISO 19011 and ISO/IEC 17021, as applicable.
+            The aim of this course is to provide delegates with the knowledge and skills required to perform first-, second-, and third-party audits of quality management systems against ISO 9001, in accordance with ISO 19011 and ISO/IEC 17021, as applicable.
           </p>
 
           <h2 className="section-title">Skills/Knowledge</h2>

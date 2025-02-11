@@ -1,5 +1,4 @@
-// CredentialDetails.js
-import React from "react";
+
 import "./CredentialDetails.css"; // <-- Import the new CSS file for credential details
 
 function CredentialDetails() {
@@ -51,7 +50,7 @@ function CredentialDetails() {
           <div className="dates-row">
             <div>
               <strong>ISSUED ON</strong>
-              <p>1 May 2024</p>
+              <p>01 February 2024</p>
             </div>
             <div>
               <strong>EXPIRES ON</strong>

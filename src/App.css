@@ -1,0 +1,154 @@
+/* ------------------------------- */
+/* Global Styles */
+/* ------------------------------- */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  
+  /* ------------------------------- */
+  /* Header */
+  /* ------------------------------- */
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 180px; /* Extra padding left and right for desktop */
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  /* Reduce left/right padding on mobile */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 15px;
+    }
+  }
+  
+  /* Left Section */
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 40px;
+  }
+  
+  /* Center Section */
+  .center-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .link-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px;
+  }
+  
+  /* ------------------------------- */
+  /* Right Section & Hamburger */
+  /* ------------------------------- */
+  .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* The sign-in button on desktop */
+  .sign-in-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .user-icon {
+    /* If you want it visible by default on desktop, declare it here: */
+    display: flex;              /* Make it a flex container so the icon is centered */
+    align-items: center;
+    justify-content: center;
+    width: 35px;                /* Circle width */
+    height: 35px;               /* Circle height */
+    background-color: #ccc;     /* Gray background */
+    border-radius: 50%;         /* Circular shape */
+    margin-right: 10px;         /* Spacing on the right (optional) */
+  }
+  /* Hamburger icon is hidden by default on desktop */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px; 
+  }
+  
+  /* Show hamburger and hide sign-in by default on mobile */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Visible on mobile */
+    }
+  
+    .sign-in-button {
+      display: none; /* Hide sign in by Suggested Credentials on mobile */
+    }
+    .user-icon {
+        display: none;
+    }
+  
+    /* When the menu is "open" (mobile-menu-open), show sign in below the hamburger */
+    .mobile-menu-open .sign-in-button {
+      display: block;
+      margin-top: 10px; /* Spacing below hamburger */
+    }
+  }
+  
+  /* ------------------------------- */
+  /* Main & Certificate */
+  /* ------------------------------- */
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  
+  .certificate-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  .certificate-image {
+    width: 700px;           /* Fixed width for larger screens */
+    max-width: 100%;        /* Never exceed container width */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .certificate-image {
+      width: 100%;
+      height: 60vh;
+      margin-top: 5vh;
+    }
+  }
+  

@@ -50,7 +50,7 @@ function CredentialDetails() {
           <div className="dates-row">
             <div>
               <strong>ISSUED ON</strong>
-              <p>01 February 2022</p>
+              <p>02 December 2022</p>
             </div>
             <div>
               <strong>EXPIRES ON</strong>

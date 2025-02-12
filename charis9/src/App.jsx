@@ -59,7 +59,7 @@ function App() {
         <div className="certificate-container">
           <img
             className="certificate-image"
-            src="/image.png"
+            src="/image.JPEG"
             alt="Certificate"
           />
         </div>
